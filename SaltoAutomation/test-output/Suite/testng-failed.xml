@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="salto.Report.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="TestCases.BVPNOffnetDistributorCreationOrderSaltoTestCase">
+        <methods>
+          <include name="caseCompletion_OffnetDistributor" invocation-numbers="0"/>
+          <include name="Init"/>
+          <include name="init"/>
+          <include name="createGoldOrderOffnetDistributor" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.BVPNOffnetDistributorCreationOrderSaltoTestCase -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="AfterClass(failed)">
+    <classes>
+      <class name="salto.Util.AutoGenerateMail">
+        <methods>
+          <include name="GenerateMail"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- salto.Util.AutoGenerateMail -->
+    </classes>
+  </test> <!-- AfterClass(failed) -->
+</suite> <!-- Failed suite [Suite] -->
